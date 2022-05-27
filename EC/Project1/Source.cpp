@@ -74,8 +74,3 @@ char* getR(int M, int a, int b, int px, int py, int qx, int qy, int scalar) {
     Point R = ec.add(P, Q);
     return outputX;
 }
-
-
-int main() {
-     return 0;
-}
