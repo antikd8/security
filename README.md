@@ -5,7 +5,6 @@ Drugov/Blinov project for security.
 ## Files and classes
 
 ### EC/EllipticCurve.cpp file contains math functions for points of elleptic curve:
-
 1. function of scalar multiply(multiply point and scalar)
   input: scalar, point
   output: point
@@ -18,12 +17,14 @@ Drugov/Blinov project for security.
 
 ### EC/BigInteger.cpp file contains helper functions for all operations with bigint.
 
-### EC/NumberTheory.cpp file contains function of finding the module of M with base N
 
-### EC/point.cpp file contains getters and setters for point objects
+### EC/NumberTheory.cpp file contains function of finding the module of M with base N.
+
+
+### EC/point.cpp file contains getters and setters for point objects.
+
 
 ### EC/randomRecordingAlg.cpp file contains such functions as:
-
 1. printArray(prints array);
 2. findValue(search value in array);
 3. pw(returns pw(k) = k % (2**w));
