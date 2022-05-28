@@ -42,12 +42,16 @@ mkdir compiled_project
 
 ### To run our C code with WebAssembly you shoold to run the following command:
 
-emcc EC/Project1/Source.cpp EC/Project1/NumeralConverter.cpp EC/BigInteger.cpp EC/EllipticCurve.cpp EC/point.cpp -O3 -s WASM=1 -s EXPORTED_FUNCTIONS="['_mult']" -s EXPORTED_RUNTIME_METHODS="['ccall','cwrap']" -o compiled_project/EC.html --shell-file assets/shell_minimal.html -s ERROR_ON_UNDEFINED_SYMBOLS=0 -s ASSERTIONS=1
+emcc EC/Project1/Source.cpp EC/Project1/NumeralConverter.cpp EC/BigInteger.cpp EC/EllipticCurve.cpp EC/point.cpp -O3 -s WASM=1 -s EXPORTED_FUNCTIONS="['_mult']" -s EXPORTED_RUNTIME_METHODS="['ccall','cwrap']" -o compiled_project/EC.html --shell-file assets/template.html -s ERROR_ON_UNDEFINED_SYMBOLS=0 -s ASSERTIONS=1 && copy assets\custom_script.js compiled_project
 
 
 ### After that we need to move our JS file, that calls all C functions to work directory:
 
 cp assets/custom_script.js compiled_project
+
+### Finally start node server:
+
+node server.js
 
 ### And that's it!
 
