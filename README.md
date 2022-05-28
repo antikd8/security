@@ -52,10 +52,10 @@ node server.js
 
 ## P.S.
 
-#### If your application isn't working run:
+### If your application isn't working, run:
 
 cd emsdk
 
 emsdk activate latest
 
-#### Before running EMCC command.
+### Before running EMCC command.
